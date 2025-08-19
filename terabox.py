@@ -101,7 +101,7 @@ async def is_user_member(client, user_id):
         if member.status in [ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]:
             return True
         else:
-            return False
+            return True
     except Exception as e:
         logging.error(f"Error checking membership status for user {user_id}: {e}")
         return True
