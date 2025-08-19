@@ -103,8 +103,8 @@ async def is_user_member(client, user_id):
         else:
             return False
     except Exception as e:
-        logging.error(f"Error checking membership status for user {user_id}:{e}")
-        return False
+        logging.error(f"Error checking membership status for user {user_id}: {e}")
+        return True
     
 def is_valid_url(url):
     parsed_url = urlparse(url)
