@@ -94,7 +94,6 @@ VALID_DOMAINS = [
     'teraboxlink.com', 'terafileshare.com'
 ]
 last_update_time = 0
-
 async def is_user_member(client, user_id):
     try:
         member = await client.get_chat_member(FSUB_ID, user_id)
